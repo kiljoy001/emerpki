@@ -1,0 +1,6 @@
+/home/scott/Repos/emerpki/emerpki/emerpki/obj/Debug/net8.0/emerpki.csproj.AssemblyReference.cache
+/home/scott/Repos/emerpki/emerpki/emerpki/obj/Debug/net8.0/emerpki.GeneratedMSBuildEditorConfig.editorconfig
+/home/scott/Repos/emerpki/emerpki/emerpki/obj/Debug/net8.0/emerpki.AssemblyInfoInputs.cache
+/home/scott/Repos/emerpki/emerpki/emerpki/obj/Debug/net8.0/emerpki.AssemblyInfo.cs
+/home/scott/Repos/emerpki/emerpki/emerpki/obj/Debug/net8.0/emerpki.csproj.CoreCompileInputs.cache
+/home/scott/Repos/emerpki/emerpki/emerpki/obj/Debug/net8.0/emerpki.sourcelink.json
