@@ -1,3 +1,5 @@
+using System.Data.SQLite;
+
 namespace emerpki;
 
 public class Menu
@@ -27,7 +29,20 @@ public class Menu
 
     private bool CreateSqLite()
     {
-        throw new NotImplementedException();
+        var connectionString = "Data Source=public-keys.db";
+        using (var connection = new SQLiteConnection(connectionString))
+        {
+            try
+            {
+                
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+        }
     }
 
     private bool CreateFilePin()
@@ -70,8 +85,6 @@ public class Menu
                 break;
             case "5":
                 ExitProgram();
-                break;
-            default:
                 break;
             
         }

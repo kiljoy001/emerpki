@@ -5,8 +5,8 @@ class Program
     
     static void Main(string[] args)
     {
-        bool isDebug = false;
-        bool emertestnet = false;
+        var isDebug = false;
+        var connectEmercoinTestNet = false;
 
         if (args.Length > 0 && args[0] == "--debug")
         {
@@ -15,10 +15,10 @@ class Program
 
         if (args.Length > 1 && args[1] == "--testnet")
         {
-            emertestnet = true;
+            connectEmercoinTestNet = true;
         }
-        Menu ProgramMenu = new Menu(isDebug, emertestnet);
-        ProgramMenu.DisplayTestMenu();
+        var programMenu = new Menu(isDebug, connectEmercoinTestNet);
+        programMenu.DisplayTestMenu();
     }
 
 }

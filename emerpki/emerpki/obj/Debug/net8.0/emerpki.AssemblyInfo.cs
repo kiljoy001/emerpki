@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("emerpki")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0363d8ba962b2904db874c442b7f7738249ab677")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd8a915ee8d76b3c5cd8285775203e57cd2e214a")]
 [assembly: System.Reflection.AssemblyProductAttribute("emerpki")]
 [assembly: System.Reflection.AssemblyTitleAttribute("emerpki")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
