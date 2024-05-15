@@ -23,8 +23,10 @@ public class Menu
 
     private void ChooseOptions()
     {
+        //TO-DO Update text output and case to include adding hashed public keys data into the file. 
         Console.WriteLine("Please Choose an option:\n1)Create a SQLite Database\n2)Pin a SQLite Database on IPFS" +
-                          "\n3)Check Emercoin wallet balance\n4)Post Merkle Root & File CID to blockchain\n5)Exit program");
+                          "\n3)Check Emercoin wallet balance\n4)Post Merkle Root & File CID to blockchain\n5)Add public key hashes" +
+                          "\n6)Exit program");
     }
 
     private bool CreateSqLite()
@@ -64,6 +66,10 @@ public class Menu
     {
         throw new NotImplementedException();
     }
+    private void InsertIntoDatabase()
+    {
+        throw new NotImplementedException();
+    }
     public void DisplayTestMenu()
     {
         DisplayGreetings();
@@ -84,11 +90,18 @@ public class Menu
                 PostToBlockchain();
                 break;
             case "5":
+                InsertIntoDatabase();
+                break;
+            case "6":
                 ExitProgram();
+                break;
+            default:
+                ChooseOptions();
                 break;
             
         }
         
     }
-    
+
+   
 }
