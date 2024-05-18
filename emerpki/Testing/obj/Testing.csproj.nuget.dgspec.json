@@ -55,8 +55,10 @@
               "version": "[17.8.0, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             },
             "xunit": {
               "target": "Package",
@@ -117,19 +119,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Ipfs.Http.Client": {
+            "BouncyCastle.Cryptography": {
               "target": "Package",
-              "version": "[0.33.0, )"
-            },
-            "JsonRPC": {
-              "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[2.3.1, )"
             },
             "System.Console": {
               "target": "Package",
               "version": "[4.3.1, )"
             },
-            "System.Data.SQLite": {
+            "System.Data.SQLite.Core": {
               "target": "Package",
               "version": "[1.0.118, )"
             }

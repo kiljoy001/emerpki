@@ -6,11 +6,13 @@ using Org.BouncyCastle.Crypto.Generators;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Security;
 
+
 namespace emerpki;
 
 public class EccKeys
 {
     private SecureRandom _seed;
+    private AsymmetricCipherKeyPair _keypair;
 
     private void InitializeSeed(string cid, string? akKeyString = null, string? blockchainHash = null)
     {
@@ -39,7 +41,8 @@ public class EccKeys
 
         var combinedBytes = combinedByteList.ToArray();
        
-        _seed = new SecureRandom(combinedBytes);
+        _seed = new SecureRandom();
+        _seed.SetSeed(combinedBytes);
     }
     
     public EccKeys(string cid)
@@ -69,6 +72,24 @@ public class EccKeys
         ECKeyGenerationParameters kgenParameters = new ECKeyGenerationParameters(ecSpec, _seed);
         generator.Init(kgenParameters);
         AsymmetricCipherKeyPair keyPair = generator.GenerateKeyPair();
+        _keypair = keyPair;
         return keyPair;
+    }
+
+    public bool EncryptData(Stream data)
+    {
+        if (_keypair == null)
+        {
+            GenerateEccKeyPair();
+        }
+        try
+        {
+            return true;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return false;
+        }
     }
 }

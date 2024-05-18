@@ -38,19 +38,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Ipfs.Http.Client": {
+            "BouncyCastle.Cryptography": {
               "target": "Package",
-              "version": "[0.33.0, )"
-            },
-            "JsonRPC": {
-              "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[2.3.1, )"
             },
             "System.Console": {
               "target": "Package",
               "version": "[4.3.1, )"
             },
-            "System.Data.SQLite": {
+            "System.Data.SQLite.Core": {
               "target": "Package",
               "version": "[1.0.118, )"
             }
