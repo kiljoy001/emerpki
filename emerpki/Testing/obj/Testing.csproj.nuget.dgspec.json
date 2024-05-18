@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj": {}
+    "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj": {}
   },
   "projects": {
-    "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj": {
+    "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
+        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
         "projectName": "Testing",
-        "projectPath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
+        "projectPath": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repo/emerpki/emerpki/Testing/obj/",
+        "outputPath": "/home/scott/Repos/emerpki/emerpki/Testing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/scott/Repo/emerpki/emerpki/emerpki/emerpki.csproj": {
-                "projectPath": "/home/scott/Repo/emerpki/emerpki/emerpki/emerpki.csproj"
+              "/home/scott/Repos/emerpki/emerpki/emerpki/emerpki.csproj": {
+                "projectPath": "/home/scott/Repos/emerpki/emerpki/emerpki/emerpki.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "/home/scott/Repo/emerpki/emerpki/emerpki/emerpki.csproj": {
+    "/home/scott/Repos/emerpki/emerpki/emerpki/emerpki.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/emerpki/emerpki.csproj",
+        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/emerpki/emerpki.csproj",
         "projectName": "emerpki",
-        "projectPath": "/home/scott/Repo/emerpki/emerpki/emerpki/emerpki.csproj",
+        "projectPath": "/home/scott/Repos/emerpki/emerpki/emerpki/emerpki.csproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repo/emerpki/emerpki/emerpki/obj/",
+        "outputPath": "/home/scott/Repos/emerpki/emerpki/emerpki/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -117,21 +117,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BouncyCastle.Cryptography": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
             "Ipfs.Http.Client": {
               "target": "Package",
               "version": "[0.33.0, )"
             },
-            "JsonRPC": {
+            "SQLite": {
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[3.13.0, )"
             },
             "System.Console": {
               "target": "Package",
               "version": "[4.3.1, )"
-            },
-            "System.Data.SQLite": {
-              "target": "Package",
-              "version": "[1.0.118, )"
             }
           },
           "imports": [
