@@ -11,7 +11,7 @@ public class EccKeyTests
     [Property]
     public void GeneratedKeyPairsAreNotNull(NonNull<string> cid)
     {
-        var ecckeys = new EccKeys(cid.Item);
+        var ecckeys = new AESCryptoService(cid.Item);
         var keypair = ecckeys.GenerateEccKeyPair();
         Assert.NotNull(keypair.Public);
         Assert.NotNull(keypair.Private);
