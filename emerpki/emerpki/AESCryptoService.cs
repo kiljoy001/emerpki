@@ -12,7 +12,7 @@ namespace emerpki;
 
 public class AESCryptoService
 {
-    public KeyParameter _key;
+    public KeyParameter Key;
     private readonly byte[] _iv;
 
     public AESCryptoService(byte[] iv)
@@ -61,7 +61,7 @@ public class AESCryptoService
         var keyGen = new CipherKeyGenerator();
         keyGen.Init(new KeyGenerationParameters(new SecureRandom(), keySize));
         var keyParam = keyGen.GenerateKeyParameter();
-        _key = keyParam;
+        Key = keyParam;
         var keyParamAead = new AeadParameters(keyParam, macSize, nonce, aadData);
         var cipherMode = new GcmBlockCipher(cipher);
         cipherMode.Init(true, keyParamAead);
@@ -74,7 +74,7 @@ public class AESCryptoService
             return appendAADDataBytes(encryptedBytes, nonce, aadData);
         }
 
-        if (inputFile == null || outputPath == null) return new byte[] { 0 };
+        if (inputFile == null || outputPath == null) return [0];
         using var fileStream = new FileStream(inputFile, FileMode.Open, FileAccess.Read);
         using var outputStream = new FileStream(outputPath, FileMode.Create, FileAccess.Write);
         const int byteBuffer = 1048576;
@@ -87,6 +87,6 @@ public class AESCryptoService
             cipherMode.DoFinal(outputBuffer, bytesRead);
             outputStream.Write(outputBuffer, 0, outputBuffer.Length);
         }
-        return new byte[] { 1 };
+        return [1];
     }
 }
