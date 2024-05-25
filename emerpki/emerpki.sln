@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emerpki", "emerpki\emerpki.csproj", "{3A3D2E24-463F-436B-9D5A-8AB5485C4415}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecenKeep", "DecenKeep\DecenKeep.csproj", "{3A3D2E24-463F-436B-9D5A-8AB5485C4415}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{712D1DB2-E317-4E7D-A615-F0FF6A4809D4}"
 EndProject
