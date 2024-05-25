@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\emerpki\emerpki.csproj" />
+      <ProjectReference Include="..\DecenKeep\DecenKeep.csproj" />
     </ItemGroup>
 
 </Project>

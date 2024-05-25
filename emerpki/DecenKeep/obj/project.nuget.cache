@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "N/9eZQBjZOwmiQxke0puuzkyHkNFtA8ST2FJTn/f2i3vj0Cyi4fegmj2daEdtcIXKcRMWInCQWA1BtRqnB5hBg==",
+  "success": true,
+  "projectFilePath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj",
+  "expectedPackageFiles": [
+    "/home/scott/.nuget/packages/bouncycastle.cryptography/2.3.1/bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "/home/scott/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/scott/.nuget/packages/microsoft.netcore.targets/1.1.2/microsoft.netcore.targets.1.1.2.nupkg.sha512",
+    "/home/scott/.nuget/packages/stub.system.data.sqlite.core.netstandard/1.0.118/stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "/home/scott/.nuget/packages/system.console/4.3.1/system.console.4.3.1.nupkg.sha512",
+    "/home/scott/.nuget/packages/system.data.sqlite.core/1.0.118/system.data.sqlite.core.1.0.118.nupkg.sha512",
+    "/home/scott/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
+    "/home/scott/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/home/scott/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/home/scott/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
