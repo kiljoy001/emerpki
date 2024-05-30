@@ -10,135 +10,154 @@ public class Menu
     private readonly IBlockchainService _blockchainService;
 
     public Menu(bool isDebug, IDatabaseService databaseService, IFileService fileService,
-        IWalletService walletService, IBlockchainService blockchainService)
+        IBlockchainService blockchainService)
     {
         IsDebug = isDebug;
-        TestMenu = isDebug && ConnectEmercoinTestNet;
         _databaseService = databaseService;
         _fileService = fileService;
-        _walletService = walletService;
         _blockchainService = blockchainService;
     }
 
     public bool IsDebug { get; set; }
-    private bool ConnectEmercoinTestNet { get; set; }
-
-    public bool TestMenu { get; }
-
     private void DisplayGreetings()
     {
         Console.WriteLine(
-            "Welcome to DecenKeep, a Aergolite based, IPFS hosted file, using the Emercoin Blockchain network");
+            "Welcome to DecenKeep, an aergolite based, backup service.");
     }
 
-    private void ChooseOptions()
+    private void DisplayOptions()
     {
-        //TO-DO Update text output and case to include adding hashed public keys data into the file. 
-        Console.WriteLine("Please Choose an option:\n1)Create a SQLite Database\n2)Pin a SQLite Database on IPFS" +
-                          "\n3)Check Emercoin wallet balance\n4)Post Merkle Root & File CID to blockchain\n5)Add public key hashes" +
-                          "\n6)Exit program");
+        Console.WriteLine("Please choose an option:");
+        Console.WriteLine("1) Create a new backup directory");
+        Console.WriteLine("2) Add file to backup");
+        Console.WriteLine("3) Remove a backup file");
+        Console.WriteLine("4) List backed-up files");
+        Console.WriteLine("5) Pin backed up files to IPFS");
+        Console.WriteLine("6) List pinned files");
+        Console.WriteLine("7) Encrypt secret");
+        Console.WriteLine("8) Post secret & database CID to Emercoin network");
+        Console.WriteLine("9) Help");
+        Console.WriteLine("10) Exit program");
     }
-
-    private async Task CreateSqLiteAsync()
+    private Task CreateBackupDirectoryAsync()
     {
-        try
-        {
-            var result = await _databaseService.CreateDatabaseAsync();
-            Console.WriteLine(result ? "Database created successfully!" : "Failed to create the database.");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error creating database: {e.Message}");
-        }
+        Console.WriteLine("Creating a new backup directory...");
+        // Implement your logic here
+        return Task.CompletedTask;
     }
 
-    private async Task CreateFilePinAsync()
+    private Task AddFileToBackupAsync()
     {
-        try
-        {
-            var result = await _fileService.PinFileAsync();
-            Console.WriteLine(result ? "File pinned successfully." : "Failed to pin file.");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error pinning file: {e.Message}");
-        }
+        Console.WriteLine("Adding file to backup...");
+        // Implement your logic here
+        return Task.CompletedTask;
     }
 
-    private async Task CheckWalletBalanceAsync()
+    private Task RemoveBackupFileAsync()
     {
-        try
-        {
-            var balance = await _walletService.CheckBalanceAsync();
-            Console.WriteLine($"Wallet balance: {balance}");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error checking wallet balance: {e.Message}");
-        }
+        Console.WriteLine("Removing a backup file...");
+        // Implement your logic here
+        return Task.CompletedTask;
     }
 
-    private async Task PostToBlockchainAsync()
+    private Task ListBackedUpFilesAsync()
     {
-        try
-        {
-            var result = await _blockchainService.PostToBlockchainAsync();
-            Console.WriteLine(result ? "Posted to blockchain successfully." : "Failed to post to blockchain.");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error posting to blockchain: {e.Message}");
-        }
+        Console.WriteLine("Listing backed-up files...");
+        // Implement your logic here
+        return Task.CompletedTask;
     }
 
-    private async Task InsertIntoDatabaseAsync()
+    private Task PinBackedUpFilesToIpfsAsync()
     {
-        try
-        {
-            var result = await _databaseService.InsertIntoDatabaseAsync();
-            Console.WriteLine(result ? "Inserted into database successfully." : "Failed to insert into database.");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error inserting into database: {e.Message}");
-        }
+        Console.WriteLine("Pinning backed-up files to IPFS...");
+        // Implement your logic here
+        return Task.CompletedTask;
     }
 
-    private void ExitProgram()
+    private Task ListPinnedFilesAsync()
+    {
+        Console.WriteLine("Listing pinned files...");
+        // Implement your logic here
+        return Task.CompletedTask;
+    }
+
+    private Task EncryptSecretAsync()
+    {
+        Console.WriteLine("Encrypting secret...");
+        // Implement your logic here
+        return Task.CompletedTask;
+    }
+
+    private Task PostSecretAndCidToEmercoinAsync()
+    {
+        Console.WriteLine("Posting secret and database CID to Emercoin network...");
+        // Implement your logic here
+        return Task.CompletedTask;
+    }
+
+    private Task DisplayHelpAsync()
+    {
+        Console.WriteLine("Displaying help information...");
+        // Implement your logic here
+        return Task.CompletedTask;
+    }
+
+    private Task ExitProgramAsync()
     {
         Console.WriteLine("Exiting program...");
+        Environment.Exit(0);
+        return Task.CompletedTask;
     }
-
     public async Task DisplayTestMenuAsync()
     {
         DisplayGreetings();
         while (true)
         {
-            ChooseOptions();
+            DisplayOptions();
             string? optionChoice = Console.ReadLine();
-            switch (optionChoice)
+
+            if (Enum.TryParse<MenuOption>(optionChoice, out var menuOption))
             {
-                case "1":
-                    await CreateSqLiteAsync();
-                    break;
-                case "2":
-                    await CreateFilePinAsync();
-                    break;
-                case "3":
-                    await CheckWalletBalanceAsync();
-                    break;
-                case "4":
-                    await PostToBlockchainAsync();
-                    break;
-                case "5":
-                    await InsertIntoDatabaseAsync();
-                    break;
-                case "6":
-                    ExitProgram();
-                    break;
-                default:
-                    Console.WriteLine("Invalid Option, please try another option");
-                    break;
+                switch (menuOption)
+                {
+                    case MenuOption.CreateBackupDirectory:
+                        await CreateBackupDirectoryAsync();
+                        break;
+                    case MenuOption.AddFileToBackup:
+                        await AddFileToBackupAsync();
+                        break;
+                    case MenuOption.RemoveBackupFile:
+                        await RemoveBackupFileAsync();
+                        break;
+                    case MenuOption.ListBackedUpFiles:
+                        await ListBackedUpFilesAsync();
+                        break;
+                    case MenuOption.PinBackedUpFilesToIpfs:
+                        await PinBackedUpFilesToIpfsAsync();
+                        break;
+                    case MenuOption.ListPinnedFiles:
+                        await ListPinnedFilesAsync();
+                        break;
+                    case MenuOption.EncryptSecret:
+                        await EncryptSecretAsync();
+                        break;
+                    case MenuOption.PostSecretAndCidToEmercoin:
+                        await PostSecretAndCidToEmercoinAsync();
+                        break;
+                    case MenuOption.Help:
+                        await DisplayHelpAsync();
+                        break;
+                    case MenuOption.Exit:
+                        await ExitProgramAsync();
+                        return;
+                    default:
+                        Console.WriteLine("Invalid Option, please try another option.");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid Option, please try another option.");
             }
         }
     }
