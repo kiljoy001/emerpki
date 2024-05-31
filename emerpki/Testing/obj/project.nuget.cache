@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J0AqtYPGjVehVcJgbCUahZAaoJOWfRkzyTI4m/wR8BsySkzg/bq+lzHuCS5KSRgrnGJcwBbsm2LJR3ICvLlamg==",
+  "dgSpecHash": "VMwuLqL6g4MNsMabwzPoCct718UHToCZRYELVCmYOwtRrOMt+tIFXL6T2vDtEODgIfUnquPkMYpJndj7IO2KGw==",
   "success": true,
-  "projectFilePath": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
+  "projectFilePath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
   "expectedPackageFiles": [
     "/home/scott/.nuget/packages/bouncycastle.cryptography/2.3.1/bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "/home/scott/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",

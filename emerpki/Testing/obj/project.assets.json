@@ -1683,11 +1683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
+      "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
       "projectName": "Testing",
-      "projectPath": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
+      "projectPath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
       "packagesPath": "/home/scott/.nuget/packages/",
-      "outputPath": "/home/scott/Repos/emerpki/emerpki/Testing/obj/",
+      "outputPath": "/home/scott/Repo/emerpki/emerpki/Testing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -1702,8 +1702,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
-              "projectPath": "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj"
+            "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
+              "projectPath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj"
             }
           }
         }
@@ -1757,7 +1757,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
