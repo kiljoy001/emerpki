@@ -1,6 +1,18 @@
 namespace DecenKeep;
 using System.Collections.Generic;
 
+public interface ITrezorService
+{
+    public Task InitializeAsync();
+    public Task<string> GetPublicKeyAsync();
+    public Task<string> SignTransactionAsync();
+    
+}
+public interface ISecretHash
+{
+    Task<string> HashUserSecret(string input);
+    Task<bool> VerifyUserSecret(string input, string hashedSecret);
+}
 public interface IDatabaseService
 {
     Task<bool> InsertIntoDatabaseAsync<T>(string tableName, T data);

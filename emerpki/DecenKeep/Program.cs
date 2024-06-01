@@ -4,6 +4,7 @@ class Program
 {
     private static bool debugMode = false;
     private static bool useTestnet = false;
+    private static bool useAdminMode = false;
     
     static void Main(string[] args)
     {

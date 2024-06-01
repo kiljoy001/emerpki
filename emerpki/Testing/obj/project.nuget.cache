@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VMwuLqL6g4MNsMabwzPoCct718UHToCZRYELVCmYOwtRrOMt+tIFXL6T2vDtEODgIfUnquPkMYpJndj7IO2KGw==",
+  "dgSpecHash": "qmepaJUJixB+a4pVFTzllzUhkeXgdCZuNQX692Bt19ai6x/cyZ6PE1dTpp2EoYXKdUyNyg0LA42qAQUmHyyHww==",
   "success": true,
   "projectFilePath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
   "expectedPackageFiles": [
+    "/home/scott/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/home/scott/.nuget/packages/bouncycastle.cryptography/2.3.1/bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "/home/scott/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
     "/home/scott/.nuget/packages/fscheck/3.0.0-rc3/fscheck.3.0.0-rc3.nupkg.sha512",

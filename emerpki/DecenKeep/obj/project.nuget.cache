@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7vzO59Og4cTzODfHceMcZUxrY2C6M5ETpFsmlmhn25wM2vyFuPZamK4iirmBBHufQg6qsh+TlcK3LiJZXMAyXA==",
+  "dgSpecHash": "V+pShkN88dl2i3D8B2PSHNBCZYjpDn9poNO89ZAS7hvUo2OSdSzjnKr37AV2MkPFM1fAheX90495oL319knhKA==",
   "success": true,
   "projectFilePath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj",
   "expectedPackageFiles": [
+    "/home/scott/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/home/scott/.nuget/packages/bouncycastle.cryptography/2.3.1/bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "/home/scott/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/scott/.nuget/packages/microsoft.netcore.targets/1.1.2/microsoft.netcore.targets.1.1.2.nupkg.sha512",
