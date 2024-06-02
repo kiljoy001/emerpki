@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qmepaJUJixB+a4pVFTzllzUhkeXgdCZuNQX692Bt19ai6x/cyZ6PE1dTpp2EoYXKdUyNyg0LA42qAQUmHyyHww==",
+  "dgSpecHash": "0OY/Rj82ERScUaHs8BHnPGyNe7Qah8/dRdaqfBE129qsycnJ+Cm+/A0hAZ8zdH51zwGJRQDFhqBEU+wefkzr3A==",
   "success": true,
   "projectFilePath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "/home/scott/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
     "/home/scott/.nuget/packages/fscheck/3.0.0-rc3/fscheck.3.0.0-rc3.nupkg.sha512",
     "/home/scott/.nuget/packages/fscheck.xunit/3.0.0-rc3/fscheck.xunit.3.0.0-rc3.nupkg.sha512",
-    "/home/scott/.nuget/packages/fsharp.core/5.0.2/fsharp.core.5.0.2.nupkg.sha512",
+    "/home/scott/.nuget/packages/fsharp.core/8.0.102/fsharp.core.8.0.102.nupkg.sha512",
     "/home/scott/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",
     "/home/scott/.nuget/packages/microsoft.net.test.sdk/17.8.0/microsoft.net.test.sdk.17.8.0.nupkg.sha512",
     "/home/scott/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",

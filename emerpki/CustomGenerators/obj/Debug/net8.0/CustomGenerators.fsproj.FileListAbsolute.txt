@@ -1,0 +1,14 @@
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.fsproj.AssemblyReference.cache
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.AssemblyInfoInputs.cache
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.AssemblyInfo.fs
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.fsproj.CoreCompileInputs.cache
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.sourcelink.json
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/bin/Debug/net8.0/CustomGenerators.deps.json
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/bin/Debug/net8.0/CustomGenerators.dll
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/bin/Debug/net8.0/CustomGenerators.pdb
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/bin/Debug/net8.0/CustomGenerators.xml
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.dll
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/refint/CustomGenerators.dll
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.xml
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/CustomGenerators.pdb
+/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/Debug/net8.0/ref/CustomGenerators.dll

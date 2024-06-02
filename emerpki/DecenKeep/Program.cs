@@ -2,9 +2,9 @@
 
 class Program
 {
-    private static bool debugMode = false;
-    private static bool useTestnet = false;
-    private static bool useAdminMode = false;
+    private static bool _debugMode = false;
+    private static bool _useTestnet = false;
+    private static bool _useAdminMode = false;
     
     static void Main(string[] args)
     {
@@ -12,20 +12,20 @@ class Program
         {
             if (arg.Equals("--debug", StringComparison.OrdinalIgnoreCase))
             {
-                debugMode = true;
+                _debugMode = true;
             }
             else if (arg.Equals("--testnet", StringComparison.OrdinalIgnoreCase))
             {
-                useTestnet = true;
+                _useTestnet = true;
             }
         }
 
-        if (debugMode)
+        if (_debugMode)
         {
             Console.WriteLine("Debug mode enabled.");
         }
         
-        if (useTestnet)
+        if (_useTestnet)
         {
             Console.WriteLine("Using Emercoin testnet.");
         }

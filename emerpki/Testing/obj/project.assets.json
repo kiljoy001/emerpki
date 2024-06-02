@@ -68,64 +68,57 @@
           }
         }
       },
-      "FSharp.Core/5.0.2": {
+      "FSharp.Core/8.0.102": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/FSharp.Core.dll": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/FSharp.Core.dll": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
             "related": ".xml"
           }
         },
         "resource": {
-          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
-          }
-        },
-        "contentFiles": {
-          "contentFiles/any/any/_._": {
-            "buildAction": "None",
-            "codeLanguage": "any",
-            "copyToOutput": false
           }
         }
       },
@@ -654,6 +647,20 @@
           }
         }
       },
+      "CustomGenerators/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FSharp.Core": "8.0.102",
+          "FsCheck": "3.0.0-rc3"
+        },
+        "compile": {
+          "bin/placeholder/CustomGenerators.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomGenerators.dll": {}
+        }
+      },
       "DecenKeep/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -822,16 +829,14 @@
         "logo.png"
       ]
     },
-    "FSharp.Core/5.0.2": {
-      "sha512": "DpcajqENgb3VXaHw1FKfVS+TWwEzck1PCajqLwBAVrtd1lfxd7T8JISVZBdV1mX9+2g48+tIgpNaVJWObdMrBw==",
+    "FSharp.Core/8.0.102": {
+      "sha512": "CYfsb3hPz/GkbaCXSSBnUSq1zp4vZ99efurXpojqMz9y6g6ydS8MlP6MRsW03wp1wVzEhkwPJ3qyJzoRQToRPg==",
       "type": "package",
-      "path": "fsharp.core/5.0.2",
+      "path": "fsharp.core/8.0.102",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "Icon.png",
-        "contentFiles/any/netstandard2.0/FSharp.Core.xml",
-        "fsharp.core.5.0.2.nupkg.sha512",
+        "fsharp.core.8.0.102.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -847,7 +852,22 @@
         "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
         "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
         "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/FSharp.Core.dll",
+        "lib/netstandard2.1/FSharp.Core.xml",
+        "lib/netstandard2.1/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.8.0": {
@@ -1706,6 +1726,11 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
+    "CustomGenerators/1.0.0": {
+      "type": "project",
+      "path": "../CustomGenerators/CustomGenerators.fsproj",
+      "msbuildProject": "../CustomGenerators/CustomGenerators.fsproj"
+    },
     "DecenKeep/1.0.0": {
       "type": "project",
       "path": "../DecenKeep/DecenKeep.csproj",
@@ -1714,6 +1739,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CustomGenerators >= 1.0.0",
       "DecenKeep >= 1.0.0",
       "FsCheck >= 3.0.0-rc3",
       "FsCheck.Xunit >= 3.0.0-rc3",
@@ -1747,6 +1773,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj": {
+              "projectPath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj"
+            },
             "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
               "projectPath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj"
             }
@@ -1802,7 +1831,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

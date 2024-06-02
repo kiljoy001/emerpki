@@ -10,7 +10,7 @@ using Org.BouncyCastle.Security;
 namespace DecenKeep;
 
 
-public class AesCryptoService
+public class AesCryptoService: IAesService
 {
     public KeyParameter Key { get; private set; }
     private readonly byte[] _iv;
@@ -62,7 +62,7 @@ public class AesCryptoService
                 combinedBytes.AddRange(aadData);
                 combinedBytes.AddRange(encrypted);
                 return combinedBytes.ToArray();
-            }
+            }         
 
             public byte[] Encrypt(byte[] plainBytes, string contextFileName)
             {

@@ -39,9 +39,9 @@
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.AssemblyInfo.cs
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.csproj.CoreCompileInputs.cache
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.sourcelink.json
-/home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.csproj.Up2Date
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.dll
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/refint/DecenKeep.dll
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.pdb
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.genruntimeconfig.cache
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/ref/DecenKeep.dll
+/home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.csproj.CopyComplete

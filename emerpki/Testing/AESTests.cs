@@ -7,7 +7,7 @@ using Org.BouncyCastle.Security;
 
 namespace Testing
 {
-    public class AESTests
+    public class AesTests
     {
         public class AesCryptoServiceTests
         {

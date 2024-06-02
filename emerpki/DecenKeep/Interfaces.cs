@@ -1,3 +1,7 @@
+using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
+
 namespace DecenKeep;
 using System.Collections.Generic;
 
@@ -35,7 +39,6 @@ public interface IFileService
     Task<bool> EncryptAndBackupCidAsync(string cid, string userKey);
     Task<string> RetrieveEncryptedCidAsync(string cid, string userKey);
     Task<bool> PostKeyToEmercoinAsync(string encryptedKey);
-    Task<string> RestoreFromEmercoinAsync(string nvsEntry);
     Task<string> GenerateNewEncryptionKeyAsync();
     Task<bool> InitializeBackupDirectoryAsync(string location);
 }
@@ -55,21 +58,20 @@ public interface ICostEstimator
 {
     double EstimateCost(int rewardInCents, int leaseTimeInYears, int dataSizeInBytes);
 }
-public interface IBayesianCorrector
+
+public interface IAesService
 {
-    void UpdatePosterior(List<IObservedData> observedData);
-    (double Mean, double StdDev) GetPosteriorStatistics();
-    double CorrectEstimate(double initialEstimate, int dataSize);
+    byte[] Decrypt(byte[] encryptedBytes, byte[] key);
+    bool EncryptFile(string inputFile, string outputFile, string fileMetaData);
+    bool DecryptFile(string inputFile, string outputFile, byte[] encryptionKey);
+    byte[] Encrypt(byte[] plainBytes, string contextFileName);
+
+    void SetKey(byte[]? key);
 }
-public interface IObservedData
+
+public interface IKyberService
 {
-    int Reward { get; set; }
-    double LeaseTime { get; set; }
-    double Cost { get; set; }
-}
-public interface IHybridEstimator
-{
-    void UpdateBayesianCorrector(List<IObservedData> observedData);
-    double EstimateCost(int rewardInCents, int leaseTimeInYears, int dataSizeInBytes);
-    (double Mean, double StdDev) GetPosteriorStatistics();
+    AsymmetricCipherKeyPair GenerateKyberKeys();
+    (byte[] CipherText, byte[] AesKey) GenerateAesKey(KyberPublicKeyParameters decoderKyberPublicKey);
+    byte[] DecryptData(byte[] cipherText, KyberPrivateKeyParameters privateKey);
 }

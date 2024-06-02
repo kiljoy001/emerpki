@@ -21,6 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\CustomGenerators\CustomGenerators.fsproj" />
       <ProjectReference Include="..\DecenKeep\DecenKeep.csproj" />
     </ItemGroup>
 
