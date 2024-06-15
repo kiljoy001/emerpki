@@ -1,0 +1,13 @@
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/bin/Debug/net8.0/IPFSNodeLibrary.deps.json
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/bin/Debug/net8.0/IPFSNodeLibrary.dll
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/bin/Debug/net8.0/IPFSNodeLibrary.pdb
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.csproj.AssemblyReference.cache
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.AssemblyInfoInputs.cache
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.AssemblyInfo.cs
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.csproj.CoreCompileInputs.cache
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.sourcelink.json
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.dll
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/refint/IPFSNodeLibrary.dll
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/IPFSNodeLibrary.pdb
+/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/Debug/net8.0/ref/IPFSNodeLibrary.dll

@@ -8,10 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-      <PackageReference Include="BouncyCastle.Cryptography" Version="2.3.1" />
-      <PackageReference Include="System.Console" Version="4.3.1" />
-      <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+        <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+        <PackageReference Include="BouncyCastle.Cryptography" Version="2.4.0" Alias="BCNew"/>
+        <PackageReference Include="System.Console" Version="4.3.1" />
+        <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="Portable.BouncyCastle" ExcludeAssets="all" />
     </ItemGroup>
 
 </Project>

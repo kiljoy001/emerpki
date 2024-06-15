@@ -1,5 +1,4 @@
 using Org.BouncyCastle.Crypto;
-using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Pqc.Crypto.Crystals.Kyber;
 
 namespace DecenKeep;
@@ -38,7 +37,6 @@ public interface IFileService
     Task<IEnumerable<string>> ListBackedUpFilesAsync();
     Task<bool> EncryptAndBackupCidAsync(string cid, string userKey);
     Task<string> RetrieveEncryptedCidAsync(string cid, string userKey);
-    Task<bool> PostKeyToEmercoinAsync(string encryptedKey);
     Task<string> GenerateNewEncryptionKeyAsync();
     Task<bool> InitializeBackupDirectoryAsync(string location);
 }
@@ -71,7 +69,7 @@ public interface IAesService
 
 public interface IKyberService
 {
-    AsymmetricCipherKeyPair GenerateKyberKeys();
+    Org.BouncyCastle.Crypto.AsymmetricCipherKeyPair GenerateKyberKeys();
     (byte[] CipherText, byte[] AesKey) GenerateAesKey(KyberPublicKeyParameters decoderKyberPublicKey);
     byte[] DecryptData(byte[] cipherText, KyberPrivateKeyParameters privateKey);
 }
