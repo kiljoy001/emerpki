@@ -11,6 +11,7 @@
 
     <ItemGroup>
       <PackageReference Include="FsCheck" Version="3.0.0-rc3" />
+      <PackageReference Update="FSharp.Core" Version="8.0.400-beta.24229.4" />
     </ItemGroup>
 
 </Project>

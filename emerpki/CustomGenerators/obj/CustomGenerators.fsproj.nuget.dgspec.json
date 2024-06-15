@@ -37,7 +37,7 @@
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[8.0.102, )",
+              "version": "[8.0.400-beta.24229.4, )",
               "generatePathProperty": true
             },
             "FsCheck": {

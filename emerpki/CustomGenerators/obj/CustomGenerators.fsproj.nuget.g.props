@@ -13,7 +13,7 @@
     <SourceRoot Include="/home/scott/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/scott/.nuget/packages/fsharp.core/8.0.102</PkgFSharp_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/scott/.nuget/packages/fsharp.core/8.0.400-beta.24229.4</PkgFSharp_Core>
     <PkgFsCheck Condition=" '$(PkgFsCheck)' == '' ">/home/scott/.nuget/packages/fscheck/3.0.0-rc3</PkgFsCheck>
   </PropertyGroup>
 </Project>
