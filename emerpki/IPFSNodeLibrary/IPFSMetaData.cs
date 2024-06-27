@@ -25,4 +25,9 @@ public class IPFSMetaData: IIPFSFileMetadata
     {
         throw new NotImplementedException();
     }
+
+    public Task<string> GetData(HttpResponseMessage response)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -8,22 +8,23 @@ public class IPFSService: IIPFSCommands
     private readonly HttpClient _httpClient;
     private readonly string _baseUrl;
     private IIPFSCommands _iipfsCommandsImplementation;
+    private HttpResponseMessage _response;
 
     public IPFSService(HttpClient httpClient, string baseUrl)
     {
         _httpClient = httpClient;
         _baseUrl = baseUrl.TrimEnd('/');
     }
-    public async Task<bool> PinFileAsync(string cid)
+    public async Task<(bool, HttpResponseMessage)> PinFileAsync(string cid)
     {
         var url = $"{_baseUrl}/{IpfsEndpoint.PinFile.Url}?arg={cid}"; 
         var response = await _httpClient.PostAsync(url, null); 
-        return response.IsSuccessStatusCode;
+        return (response.IsSuccessStatusCode, response);
     }
 
-    public async Task<string> AddFileAsync(string filePath)
+    public async Task<(string, HttpResponseMessage)> AddFileAsync(string filePath)
     {
-        var url = string.Format($"{_baseUrl}/{IpfsEndpoint.AddFile.Url}", filePath);
+        var url = $"{_baseUrl}/{IpfsEndpoint.AddFile.Url}?arg={filePath}";
         using var content = new MultipartContent();
         await using var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
         using var fileContent = new StreamContent(fileStream);
@@ -33,11 +34,16 @@ public class IPFSService: IIPFSCommands
         var response = await _httpClient.PostAsync(url, content);
         response.EnsureSuccessStatusCode();
         var responseString = await response.Content.ReadAsStringAsync();
-        return responseString;
+        return (responseString, response);
     }
 
-    public Task<bool> GetFileAsync(string cid)
+    public async Task<(bool, HttpResponseMessage)> GetFileAsync(string cid)
     {
-        throw new NotImplementedException();
+        var url = $"{_baseUrl}/{IpfsEndpoint.CatFile.Url}?arg={cid}";
+        var response = await _httpClient.GetAsync(url);
+        var wrapper = new HttpResponseMessageWrapper(response);
+        var responseKeys = await wrapper.GetResponseKeysAsync();
+        return (response.IsSuccessStatusCode, response);
     }
+    
 }
