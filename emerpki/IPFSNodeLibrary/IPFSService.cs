@@ -7,7 +7,6 @@ public class IPFSService: IIPFSCommands
 {
     private readonly HttpClient _httpClient;
     private readonly string _baseUrl;
-    private IIPFSCommands _iipfsCommandsImplementation;
     private HttpResponseMessage _response;
 
     public IPFSService(HttpClient httpClient, string baseUrl)
@@ -15,14 +14,16 @@ public class IPFSService: IIPFSCommands
         _httpClient = httpClient;
         _baseUrl = baseUrl.TrimEnd('/');
     }
-    public async Task<(bool, HttpResponseMessage)> PinFileAsync(string cid)
+    public async Task<(bool, HttpResponseMessage, IEnumerable<string>)> PinFileAsync(string cid)
     {
         var url = $"{_baseUrl}/{IpfsEndpoint.PinFile.Url}?arg={cid}"; 
-        var response = await _httpClient.PostAsync(url, null); 
-        return (response.IsSuccessStatusCode, response);
+        var response = await _httpClient.PostAsync(url, null);
+        var wrapper = new HttpResponseMessageWrapper(response);
+        var responseKeys = await wrapper.GetResponseKeysAsync();
+        return (response.IsSuccessStatusCode, response, responseKeys);
     }
 
-    public async Task<(string, HttpResponseMessage)> AddFileAsync(string filePath)
+    public async Task<(string, HttpResponseMessage, IEnumerable<string>)> AddFileAsync(string filePath)
     {
         var url = $"{_baseUrl}/{IpfsEndpoint.AddFile.Url}?arg={filePath}";
         using var content = new MultipartContent();
@@ -32,18 +33,28 @@ public class IPFSService: IIPFSCommands
         content.Add(fileContent);
         
         var response = await _httpClient.PostAsync(url, content);
+        var wrapper = new HttpResponseMessageWrapper(response);
+        var responseKeys = await wrapper.GetResponseKeysAsync();
         response.EnsureSuccessStatusCode();
         var responseString = await response.Content.ReadAsStringAsync();
-        return (responseString, response);
+        return (responseString, response, responseKeys);
     }
 
-    public async Task<(bool, HttpResponseMessage)> GetFileAsync(string cid)
+    public async Task<(bool, HttpResponseMessage, IEnumerable<string>)> GetFileAsync(string cid)
     {
         var url = $"{_baseUrl}/{IpfsEndpoint.CatFile.Url}?arg={cid}";
         var response = await _httpClient.GetAsync(url);
         var wrapper = new HttpResponseMessageWrapper(response);
         var responseKeys = await wrapper.GetResponseKeysAsync();
-        return (response.IsSuccessStatusCode, response);
+        return (response.IsSuccessStatusCode, response, responseKeys);
     }
-    
+
+    public async Task<(bool, HttpResponseMessage, IEnumerable<string>)> RemoveFileAsync(string cid)
+    {
+        var url = $"{_baseUrl}/{IpfsEndpoint.RemoveFile.Url}?arg={cid}";
+        var response = await _httpClient.PostAsync(url, null);
+        var wrapper = new HttpResponseMessageWrapper(response);
+        var responseKeys = await wrapper.GetResponseKeysAsync();
+        return (response.IsSuccessStatusCode, response, responseKeys);
+    }
 }

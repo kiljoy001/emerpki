@@ -7,9 +7,10 @@ public interface interfaces
 {
     public interface IIPFSCommands
     {
-        Task<(bool, HttpResponseMessage)> PinFileAsync(string cid);
-        Task<(string, HttpResponseMessage)> AddFileAsync(string cid);
-        Task<(bool, HttpResponseMessage)> GetFileAsync(string cid);
+        Task<(bool, HttpResponseMessage, IEnumerable<string>)> PinFileAsync(string cid);
+        Task<(string, HttpResponseMessage, IEnumerable<string>)> AddFileAsync(string cid);
+        Task<(bool, HttpResponseMessage,IEnumerable<string>)> GetFileAsync(string cid);
+        Task<(bool, HttpResponseMessage, IEnumerable<string>)> RemoveFileAsync(string cid);
     }
 
     public interface IIPFSFileMetadata
