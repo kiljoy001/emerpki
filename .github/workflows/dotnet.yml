@@ -1,28 +1,70 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+name: Build and Test
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
+        dotnet-version: '8.0.x' # Use the specific version or the latest
+
+    - name: Restore dependencies for CustomGenerators
+      working-directory: ./CustomGenerators
       run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+
+    - name: Restore dependencies for DecenKeep
+      working-directory: ./DecenKeep
+      run: dotnet restore
+
+    - name: Restore dependencies for IPFSNodeLibrary
+      working-directory: ./IPFSNodeLibrary
+      run: dotnet restore
+
+    - name: Restore dependencies for GeneratorTesting
+      working-directory: ./GeneratorTesting
+      run: dotnet restore
+
+    - name: Restore dependencies for Testing
+      working-directory: ./Testing
+      run: dotnet restore
+
+    - name: Build CustomGenerators
+      working-directory: ./CustomGenerators
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Build DecenKeep
+      working-directory: ./DecenKeep
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Build IPFSNodeLibrary
+      working-directory: ./IPFSNodeLibrary
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Build GeneratorTesting
+      working-directory: ./GeneratorTesting
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Build Testing
+      working-directory: ./Testing
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Run tests for GeneratorTesting
+      working-directory: ./GeneratorTesting
+      run: dotnet test --no-build --verbosity normal --configuration Release
+
+    - name: Run tests for Testing
+      working-directory: ./Testing
+      run: dotnet test --no-build --verbosity normal --configuration Release
