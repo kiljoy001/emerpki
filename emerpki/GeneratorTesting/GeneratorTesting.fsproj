@@ -10,6 +10,8 @@
 
     <ItemGroup>
         <Compile Include="ByteArrayGeneratorTest.fs" />
+        <Compile Include="CidGeneratorTest.fs" />
+        <Compile Include="TestRunner.fs" />
     </ItemGroup>
 
     <ItemGroup>

@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <Compile Include="ByteArrayGenerator.fs" />
+        <Compile Include="CidGenerator.fs" />
     </ItemGroup>
 
     <ItemGroup>

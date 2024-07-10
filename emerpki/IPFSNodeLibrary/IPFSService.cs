@@ -14,7 +14,7 @@ public class IPFSService: IIPFSCommands
         _httpClient = httpClient;
         _baseUrl = baseUrl.TrimEnd('/');
     }
-    public async Task<(bool, HttpResponseMessage, IEnumerable<string>)> PinFileAsync(string cid)
+    public async Task<(bool, HttpResponseMessage, IEnumerable<string>)>  PinFileAsync(string cid)
     {
         var url = $"{_baseUrl}/{IpfsEndpoint.PinFile.Url}?arg={cid}"; 
         var response = await _httpClient.PostAsync(url, null);
