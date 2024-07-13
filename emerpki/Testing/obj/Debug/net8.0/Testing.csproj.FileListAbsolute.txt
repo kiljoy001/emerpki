@@ -20,7 +20,6 @@
 /home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll
 /home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/testhost.dll
 /home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/Newtonsoft.Json.dll
-/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/NuGet.Frameworks.dll
 /home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/System.Data.SQLite.dll
 /home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/xunit.abstractions.dll
 /home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/xunit.assert.dll
@@ -130,3 +129,15 @@
 /home/scott/Repo/emerpki/emerpki/Testing/obj/Debug/net8.0/Testing.AssemblyInfo.cs
 /home/scott/Repo/emerpki/emerpki/Testing/obj/Debug/net8.0/Testing.csproj.CoreCompileInputs.cache
 /home/scott/Repo/emerpki/emerpki/Testing/obj/Debug/net8.0/Testing.sourcelink.json
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/.msCoverageSourceRootsMapping_Testing
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/BCrypt.Net-Next.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/Castle.Core.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/Moq.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/CustomGenerators.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/IPFSNodeLibrary.dll
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/CustomGenerators.pdb
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/CustomGenerators.xml
+/home/scott/Repos/emerpki/emerpki/Testing/bin/Debug/net8.0/IPFSNodeLibrary.pdb

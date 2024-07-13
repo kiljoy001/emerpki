@@ -13,9 +13,3 @@ module ByteArrayGeneratorTest =
     // Run the property test
     let runTests () =
         Check.QuickThrowOnFailure (Prop.forAll ByteArrayGenerator.byteArrayGen prop_testByteArray)
-
-    // Optionally, you can call `runTests` at the entry point of your test suite or main function
-    //[<EntryPoint>]
-    //let main _ =
-    //    runTests ()
-    //    0

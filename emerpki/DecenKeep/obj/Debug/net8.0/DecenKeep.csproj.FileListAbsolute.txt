@@ -45,3 +45,4 @@
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.pdb
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/DecenKeep.genruntimeconfig.cache
 /home/scott/Repo/emerpki/emerpki/DecenKeep/obj/Debug/net8.0/ref/DecenKeep.dll
+/home/scott/Repos/emerpki/emerpki/DecenKeep/bin/Debug/net8.0/BCrypt.Net-Next.dll

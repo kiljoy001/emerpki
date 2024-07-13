@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C7FwOsAVNMkZ1ZfT2XZaTiaAz5PD34gSdRC4wVBJvzES0Cl2NxZEuMr9zVdjUYZVaqA+qgrzR+kr6LR8pRRWvw==",
+  "dgSpecHash": "yJ4njcSLmIJfGVIi1PuASqkwABIj1AooJaDGuKDQXI4K0YfqqwD1PxgS4Hyo8vPuwe4GYAnEPKtI07Rubs5uow==",
   "success": true,
-  "projectFilePath": "/home/scott/Repo/emerpki/emerpki/GeneratorTesting/GeneratorTesting.fsproj",
+  "projectFilePath": "/home/scott/Repos/emerpki/emerpki/GeneratorTesting/GeneratorTesting.fsproj",
   "expectedPackageFiles": [
     "/home/scott/.nuget/packages/fscheck/3.0.0-rc3/fscheck.3.0.0-rc3.nupkg.sha512",
     "/home/scott/.nuget/packages/fscheck.xunit/3.0.0-rc3/fscheck.xunit.3.0.0-rc3.nupkg.sha512",

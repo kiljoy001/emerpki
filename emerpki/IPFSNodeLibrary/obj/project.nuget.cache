@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U4orTpq/huH8XxlAKmcU/tICXGB/oPuEFXUcmhMrjIB/s/TJyt/VV8I29qY9AM6IqSluZ16zmJjoBs9PTgmcHw==",
+  "dgSpecHash": "KoVMeLBXdYkXPXaZ+TvTNZ6hegpTR+UN+V4026e3PuCNIHybbDJnId/1uPhANc5kFIPmEw8t7SgHOoWb9TtG7Q==",
   "success": true,
-  "projectFilePath": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
+  "projectFilePath": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
   "expectedPackageFiles": [
     "/home/scott/.nuget/packages/microsoft.netcore.platforms/1.1.1/microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "/home/scott/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

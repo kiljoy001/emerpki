@@ -144,11 +144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
+      "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
       "projectName": "CustomGenerators",
-      "projectPath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
+      "projectPath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
       "packagesPath": "/home/scott/.nuget/packages/",
-      "outputPath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/",
+      "outputPath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -157,7 +157,7 @@
         "net8.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/sdk/8.0.105/FSharp/library-packs": {},
+        "/home/scott/.dotnet/sdk/8.0.203/FSharp/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -165,6 +165,11 @@
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -199,7 +204,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
