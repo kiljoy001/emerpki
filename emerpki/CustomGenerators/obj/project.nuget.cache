@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1tjw+A5dUlBrywhPEwng25Jypfm1ET/bMQgiu/sX+A2sOU2B5zSguaYNVr3U/2oO8cIzhliXtjsVOcoY74O0lw==",
+  "dgSpecHash": "5RqOsel+FlgnSJV4TXX4mm9GovR2szPQ1WShcYJ8Ezsfwr0B+ZRCXEok6JSsnJh0X3V/YCZsQTFfOWrsiXfcww==",
   "success": true,
   "projectFilePath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
   "expectedPackageFiles": [
