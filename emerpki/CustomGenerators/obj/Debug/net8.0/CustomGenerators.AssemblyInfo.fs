@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("CustomGenerators")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0663f016c6ac89350c0ce191dc3a9251976e8b23")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e23afc77c821822911bb565a435543bd52615b0e")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("CustomGenerators")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("CustomGenerators")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
