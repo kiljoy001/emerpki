@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n+9oUzCo049MfWlx8nQgkMzgwVmDVb9N6lx1r//jhZF2r7Qwkw/g9WuPJCZfeqFiwRlPZ6+S+bPu4yUZCYe5Cg==",
+  "dgSpecHash": "RwXcF+GLH7WQoECdc+YdjTC8HINT6Yii61iyIH9iEuPPybStF3+zoVo1ZyW5u/ZDNOK/M6Z6YjmKDx7nMJwQ1w==",
   "success": true,
-  "projectFilePath": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
+  "projectFilePath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
   "expectedPackageFiles": [
     "/home/scott/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/home/scott/.nuget/packages/bouncycastle.cryptography/2.4.0/bouncycastle.cryptography.2.4.0.nupkg.sha512",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IPFSNodeLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e23afc77c821822911bb565a435543bd52615b0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d71ad1af4454fbcdca216de3feefd163ae82b2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("IPFSNodeLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IPFSNodeLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

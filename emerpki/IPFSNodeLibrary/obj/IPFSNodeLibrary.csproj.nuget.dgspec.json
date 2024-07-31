@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {}
+    "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {}
   },
   "projects": {
-    "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {
+    "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
+        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
         "projectName": "IPFSNodeLibrary",
-        "projectPath": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
+        "projectPath": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/obj/",
+        "outputPath": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

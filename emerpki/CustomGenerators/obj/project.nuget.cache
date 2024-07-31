@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5RqOsel+FlgnSJV4TXX4mm9GovR2szPQ1WShcYJ8Ezsfwr0B+ZRCXEok6JSsnJh0X3V/YCZsQTFfOWrsiXfcww==",
+  "dgSpecHash": "D9xXbs1bZImX4b2HxNGcoOIBO1w//12o86tY3P3Qx0whBhrRc52TKaodWKFjhK+ugccdsxppWW4rz3WN9PCm3w==",
   "success": true,
-  "projectFilePath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
+  "projectFilePath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
   "expectedPackageFiles": [
     "/home/scott/.nuget/packages/fscheck/3.0.0-rc3/fscheck.3.0.0-rc3.nupkg.sha512",
     "/home/scott/.nuget/packages/fsharp.core/8.0.400-beta.24229.4/fsharp.core.8.0.400-beta.24229.4.nupkg.sha512"

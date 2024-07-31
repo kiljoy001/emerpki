@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj": {}
+    "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj": {}
   },
   "projects": {
-    "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj": {
+    "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
+        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
         "projectName": "CustomGenerators",
-        "projectPath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
+        "projectPath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/obj/",
+        "outputPath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -20,7 +20,7 @@
           "net8.0"
         ],
         "sources": {
-          "/home/scott/.dotnet/sdk/8.0.203/FSharp/library-packs": {},
+          "/home/scott/.dotnet/sdk/8.0.303/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,18 +62,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
+    "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj",
+        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj",
         "projectName": "DecenKeep",
-        "projectPath": "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj",
+        "projectPath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repos/emerpki/emerpki/DecenKeep/obj/",
+        "outputPath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -133,18 +133,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {
+    "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
+        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
         "projectName": "IPFSNodeLibrary",
-        "projectPath": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
+        "projectPath": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/obj/",
+        "outputPath": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -192,18 +192,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj": {
+    "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
+        "projectUniqueName": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
         "projectName": "Testing",
-        "projectPath": "/home/scott/Repos/emerpki/emerpki/Testing/Testing.csproj",
+        "projectPath": "/home/scott/Repo/emerpki/emerpki/Testing/Testing.csproj",
         "packagesPath": "/home/scott/.nuget/packages/",
-        "outputPath": "/home/scott/Repos/emerpki/emerpki/Testing/obj/",
+        "outputPath": "/home/scott/Repo/emerpki/emerpki/Testing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/scott/.nuget/NuGet/NuGet.Config"
@@ -218,14 +218,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj": {
-                "projectPath": "/home/scott/Repos/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj"
+              "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj": {
+                "projectPath": "/home/scott/Repo/emerpki/emerpki/CustomGenerators/CustomGenerators.fsproj"
               },
-              "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
-                "projectPath": "/home/scott/Repos/emerpki/emerpki/DecenKeep/DecenKeep.csproj"
+              "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj": {
+                "projectPath": "/home/scott/Repo/emerpki/emerpki/DecenKeep/DecenKeep.csproj"
               },
-              "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {
-                "projectPath": "/home/scott/Repos/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj"
+              "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj": {
+                "projectPath": "/home/scott/Repo/emerpki/emerpki/IPFSNodeLibrary/IPFSNodeLibrary.csproj"
               }
             }
           }
@@ -287,7 +287,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/scott/.dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
