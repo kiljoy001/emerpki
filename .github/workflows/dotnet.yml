@@ -11,11 +11,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-
+    
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4.0.1
+    
     - name: Restore dependencies for CustomGenerators
       working-directory: /CustomGenerators
       run: dotnet restore
