@@ -16,11 +16,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.x' # Use the specific version or the latest
-
     - name: Restore dependencies for CustomGenerators
       working-directory: ./CustomGenerators
       run: dotnet restore
