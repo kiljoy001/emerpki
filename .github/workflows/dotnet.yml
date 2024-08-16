@@ -17,49 +17,49 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Restore dependencies for CustomGenerators
-      working-directory: ./CustomGenerators
+      working-directory: /CustomGenerators
       run: dotnet restore
 
     - name: Restore dependencies for DecenKeep
-      working-directory: ./DecenKeep
+      working-directory: /DecenKeep
       run: dotnet restore
 
     - name: Restore dependencies for IPFSNodeLibrary
-      working-directory: ./IPFSNodeLibrary
+      working-directory: /IPFSNodeLibrary
       run: dotnet restore
 
     - name: Restore dependencies for GeneratorTesting
-      working-directory: ./GeneratorTesting
+      working-directory: /GeneratorTesting
       run: dotnet restore
 
     - name: Restore dependencies for Testing
-      working-directory: ./Testing
+      working-directory: /Testing
       run: dotnet restore
 
     - name: Build CustomGenerators
-      working-directory: ./CustomGenerators
+      working-directory: /CustomGenerators
       run: dotnet build --no-restore --configuration Release
 
     - name: Build DecenKeep
-      working-directory: ./DecenKeep
+      working-directory: /DecenKeep
       run: dotnet build --no-restore --configuration Release
 
     - name: Build IPFSNodeLibrary
-      working-directory: ./IPFSNodeLibrary
+      working-directory: /IPFSNodeLibrary
       run: dotnet build --no-restore --configuration Release
 
     - name: Build GeneratorTesting
-      working-directory: ./GeneratorTesting
+      working-directory: /GeneratorTesting
       run: dotnet build --no-restore --configuration Release
 
     - name: Build Testing
-      working-directory: ./Testing
+      working-directory: /Testing
       run: dotnet build --no-restore --configuration Release
 
     - name: Run tests for GeneratorTesting
-      working-directory: ./GeneratorTesting
+      working-directory: /GeneratorTesting
       run: dotnet test --no-build --verbosity normal --configuration Release
 
     - name: Run tests for Testing
-      working-directory: ./Testing
+      working-directory: /Testing
       run: dotnet test --no-build --verbosity normal --configuration Release
