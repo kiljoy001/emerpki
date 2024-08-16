@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' # Use the specific version or the latest
+        dotnet-version: '8.x' # Use the specific version or the latest
 
     - name: Restore dependencies for CustomGenerators
       working-directory: ./CustomGenerators
