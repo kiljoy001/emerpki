@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-dotnet@v4.0.1
     
     - name: Restore dependencies for CustomGenerators
-      working-directory: /CustomGenerators
+      working-directory: ./emerpki/CustomGenerators
       run: dotnet restore
 
     - name: Restore dependencies for DecenKeep
