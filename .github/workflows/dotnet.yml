@@ -41,7 +41,7 @@ jobs:
 
     - name: Run tests for GeneratorTesting
       working-directory: ./emerpki/GeneratorTesting
-      run: dotnet test --no-build --verbosity normal --configuration Release
+      run: dotnet run --project GeneratorTesting.fsproj
 
     - name: Run tests for Testing
       working-directory: ./emerpki/Testing
